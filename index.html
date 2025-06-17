@@ -4,52 +4,77 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Devandran M - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background-color: #003366;
+      background-color: #005792;
       color: white;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1rem;
     }
     section {
-      padding: 20px;
       max-width: 900px;
-      margin: auto;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     }
     h2 {
-      border-bottom: 2px solid #003366;
+      color: #005792;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #005792;
       padding-bottom: 5px;
     }
     ul {
-      list-style-type: square;
+      list-style-type: disc;
       padding-left: 20px;
+      margin-bottom: 20px;
     }
-    .contact, .skills, .education {
-      background-color: #e9ecef;
-      padding: 15px;
-      margin-top: 20px;
-      border-radius: 5px;
+    .job-title {
+      font-weight: 600;
     }
     .download {
       text-align: center;
-      margin-top: 20px;
+      margin-top: 30px;
     }
     .download a {
-      background: #003366;
+      background: #005792;
       color: #fff;
-      padding: 10px 20px;
+      padding: 12px 25px;
       text-decoration: none;
-      border-radius: 5px;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: background 0.3s;
     }
     .download a:hover {
-      background: #0055aa;
+      background: #007cc2;
+    }
+    .education, .skills-block {
+      background-color: #f1f3f5;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 4px solid #005792;
+      border-radius: 5px;
     }
   </style>
 </head>
@@ -65,29 +90,31 @@
     <p>A dedicated Junior Engineer with experience in software development. Worked on projects for large clients like BPCL and international financial systems. Skilled in .NET, C#, and SQL Server, with a passion for solving real-world problems and building scalable web solutions.</p>
 
     <h2>Skills</h2>
-    <ul>
-      <li>C#, ASP.NET MVC, .NET Framework</li>
-      <li>SQL Server, Data Querying & Archiving</li>
-      <li>Angular (HTML, CSS, JavaScript)</li>
-      <li>Visual Studio, MSBuild</li>
-      <li>Git, Azure, Agile Methodologies</li>
-    </ul>
+    <div class="skills-block">
+      <ul>
+        <li>C#, ASP.NET MVC, .NET Framework</li>
+        <li>SQL Server, Data Querying & Archiving</li>
+        <li>Angular (HTML, CSS, JavaScript)</li>
+        <li>Visual Studio, MSBuild</li>
+        <li>Git, Azure, Agile Methodologies</li>
+      </ul>
+    </div>
 
     <h2>Projects</h2>
-    <h3>Tool Room Digitalization – BPCL (Oct 2023 – Mar 2024)</h3>
+    <h3>Tool Room Digitalization – BPCL <small>(Oct 2023 – Mar 2024)</small></h3>
     <ul>
       <li>Developed features for tool management at BPCL’s refineries</li>
       <li>Integrated Active Directory, barcode scanning, reporting dashboard</li>
     </ul>
 
-    <h3>Retirement Funds Management – South Africa (Apr 2024 – Oct 2024)</h3>
+    <h3>Retirement Funds Management – South Africa <small>(Apr 2024 – Oct 2024)</small></h3>
     <ul>
       <li>Built ASP.NET MVC modules for fund tracking and reporting</li>
       <li>Handled complex business logic for accruals and payouts</li>
     </ul>
 
     <h2>Experience</h2>
-    <p><strong>Junior Engineer</strong> – Softsell Ltd, Bangalore</p>
+    <p class="job-title">Junior Engineer – Softsell Ltd, Bangalore</p>
     <p><em>Client: Bharat Petroleum Corporation Limited (BPCL)</em></p>
     <p>Oct 2023 – Oct 2024</p>
     <ul>
@@ -95,7 +122,7 @@
       <li>Worked with SQL Server and Agile teams</li>
     </ul>
 
-    <p><strong>Software Engineer</strong> – Dhanhind Utility Pvt Ltd</p>
+    <p class="job-title">Software Engineer – Dhanhind Utility Pvt Ltd</p>
     <p>Dec 2024 – Present</p>
     <ul>
       <li>Currently contributing to enterprise solutions in a modern ASP.NET MVC environment</li>
