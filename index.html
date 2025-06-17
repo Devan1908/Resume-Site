@@ -1,144 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Devandran M - Resume</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devandran K - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
-      color: #333;
-      line-height: 1.6;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f9fa;
     }
-    header {
-      background-color: #005792;
-      color: white;
-      padding: 40px 20px;
+    .hero {
+      background-color: #ffffff;
+      padding: 60px 20px;
       text-align: center;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     }
-    header h1 {
+    .hero h1 {
       font-size: 2.5rem;
-      margin-bottom: 10px;
     }
-    header p {
-      font-size: 1.1rem;
-    }
-    section {
-      max-width: 900px;
-      margin: 30px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    }
-    h2 {
-      color: #005792;
-      margin-bottom: 15px;
-      border-bottom: 2px solid #005792;
-      padding-bottom: 5px;
-    }
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
+    .section-title {
+      border-bottom: 2px solid #0d6efd;
+      display: inline-block;
       margin-bottom: 20px;
     }
-    .job-title {
-      font-weight: 600;
+    .skills-list li {
+      margin-bottom: 5px;
     }
-    .download {
+    footer {
+      background: #0d6efd;
+      color: white;
       text-align: center;
-      margin-top: 30px;
-    }
-    .download a {
-      background: #005792;
-      color: #fff;
-      padding: 12px 25px;
-      text-decoration: none;
-      font-weight: 600;
-      border-radius: 8px;
-      transition: background 0.3s;
-    }
-    .download a:hover {
-      background: #007cc2;
-    }
-    .education, .skills-block {
-      background-color: #f1f3f5;
-      padding: 15px;
-      margin: 20px 0;
-      border-left: 4px solid #005792;
-      border-radius: 5px;
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Devandran M</h1>
-    <p>Junior Software Engineer | ASP.NET MVC Developer</p>
-    <p>📍 India | 📧 kanagarajdeva005@gmail.com | 📞 +91-7010684452</p>
+  <header class="hero">
+    <h1>Devandran K</h1>
+    <p class="lead">ASP.NET MVC Developer</p>
+    <p>Experienced in C#, ASPX, and VB.NET for enterprise web applications</p>
+    <a href="Deva_CVL%20.pdf" class="btn btn-primary mt-3" download>📄 Download CV</a>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>A dedicated Junior Engineer with experience in software development. Worked on projects for large clients like BPCL and international financial systems. Skilled in .NET, C#, and SQL Server, with a passion for solving real-world problems and building scalable web solutions.</p>
+  <main class="container mt-5">
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <p>I’m a passionate ASP.NET developer with hands-on experience building digital tools and enterprise-grade web apps. Currently working on travel-related systems for agents like Holiday Inn at Dhanhind Utility Pvt Ltd using C# and ASPX pages.</p>
+    </section>
 
-    <h2>Skills</h2>
-    <div class="skills-block">
+    <section id="skills" class="mt-5">
+      <h2 class="section-title">Skills</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Backend</h5>
+          <ul class="skills-list">
+            <li>C#, ASP.NET MVC, ASPX, VB.NET</li>
+            <li>SQL Server, Stored Procedures</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5>Frontend & Tools</h5>
+          <ul class="skills-list">
+            <li>HTML, CSS, JavaScript, Angular</li>
+            <li>Visual Studio, Git, Azure</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="mt-5">
+      <h2 class="section-title">Projects</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Tool Room Digitalization – BPCL</h5>
+              <p class="card-text">Refinery tool management system with Active Directory and barcode integration. Built for BPCL at Softsell Ltd (Oct 2023–Mar 2024).</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Retirement Funds Management – South Africa</h5>
+              <p class="card-text">Developed modules for fund tracking and complex financial calculations using ASP.NET MVC (Apr 2024–Oct 2024).</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Travel Agent System – Dhanhind</h5>
+              <p class="card-text">Enterprise travel and booking system using C# and ASPX. Working on APIs and modules for hotel and holiday package management.</p>
+              <a href="https://www.dhanhind.com/" target="_blank" class="btn btn-outline-primary mt-2">Visit Site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="mt-5">
+      <h2 class="section-title">Experience</h2>
       <ul>
-        <li>C#, ASP.NET MVC, .NET Framework</li>
-        <li>SQL Server, Data Querying & Archiving</li>
-        <li>Angular (HTML, CSS, JavaScript)</li>
-        <li>Visual Studio, MSBuild</li>
-        <li>Git, Azure, Agile Methodologies</li>
+        <li><strong>Software Engineer</strong> – Dhanhind Utility Pvt Ltd (Dec 2024 – Present)</li>
+        <li><strong>Junior Engineer</strong> – Softsell Ltd, Bangalore (Oct 2023 – Oct 2024)</li>
       </ul>
-    </div>
+    </section>
 
-    <h2>Projects</h2>
-    <h3>Tool Room Digitalization – BPCL <small>(Oct 2023 – Mar 2024)</small></h3>
-    <ul>
-      <li>Developed features for tool management at BPCL’s refineries</li>
-      <li>Integrated Active Directory, barcode scanning, reporting dashboard</li>
-    </ul>
+    <section id="education" class="mt-5">
+      <h2 class="section-title">Education</h2>
+      <p><strong>B.E. Mechanical Engineering</strong><br>M.P. Nachimuthu M. Jaganathan Engineering College, Erode – 2022<br>CGPA: 8.2 / 10</p>
+    </section>
 
-    <h3>Retirement Funds Management – South Africa <small>(Apr 2024 – Oct 2024)</small></h3>
-    <ul>
-      <li>Built ASP.NET MVC modules for fund tracking and reporting</li>
-      <li>Handled complex business logic for accruals and payouts</li>
-    </ul>
+    <section id="contact" class="mt-5">
+      <h2 class="section-title">Contact</h2>
+      <p>Email: <a href="mailto:kanagarajdeva005@gmail.com">kanagarajdeva005@gmail.com</a></p>
+      <p>Phone: +91-7010684452</p>
+      <p>Location: India</p>
+    </section>
+  </main>
 
-    <h2>Experience</h2>
-    <p class="job-title">Junior Engineer – Softsell Ltd, Bangalore</p>
-    <p><em>Client: Bharat Petroleum Corporation Limited (BPCL)</em></p>
-    <p>Oct 2023 – Oct 2024</p>
-    <ul>
-      <li>Built and maintained modules in ASP.NET MVC</li>
-      <li>Worked with SQL Server and Agile teams</li>
-    </ul>
+  <footer>
+    <p>© 2024 Devandran K. All rights reserved.</p>
+  </footer>
 
-    <p class="job-title">Software Engineer – Dhanhind Utility Pvt Ltd</p>
-    <p>Dec 2024 – Present</p>
-    <ul>
-      <li>Currently contributing to enterprise solutions in a modern ASP.NET MVC environment</li>
-      <li>Focused on backend logic, API integrations, and performance optimization</li>
-    </ul>
-
-    <h2>Education</h2>
-    <div class="education">
-      <p><strong>Bachelor of Engineering in Mechanical Engineering</strong></p>
-      <p>M.P. Nachimuthu M. Jaganathan Engineering College, Erode – 2022</p>
-      <p><strong>CGPA:</strong> 8.2 / 10</p>
-    </div>
-
-    <div class="download">
-      <a href="Deva_CVL%20.pdf" download>📄 Download Resume (PDF)</a>
-    </div>
-  </section>
 </body>
 </html>
